@@ -1,0 +1,25 @@
+This repository contains the Latex files required to compile
+a Greek/English version of Euclid's Elements. The Greek text
+is the standard Heiberg edition. The modern English translation 
+was authored by Prof. Richard Fitzpatrick (Department of Physics, 
+University of Texas at Austin).
+
+The files will only compile properly when the following
+standard Latex packages are installed:
+
+inputenc/utf8
+babel/polutonikogreek/english
+psgreek/garamond
+charter
+parallel
+fancyhdr
+amssymb
+amsmath
+epsf
+hyperref
+
+The document can be compiled by issuing the command
+
+latex Elements
+
+in the base directory (containing Elements.tex).
