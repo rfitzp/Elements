@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE THIRTEEN BOOKS OF EUCLID'S ELEMENTS OF GEOMETRY
+%
+% The Greek text of Heiberg plus a modern English translation by
+% Prof. Richard Fitzpatrick, The University of Texas at Austin.
+% E-mail: rfitzp@farside.ph.utexas.edu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NeedsTeXFormat{LaTeX2e}
+\documentclass[10pt]{article}
+
+%%%%%%%%
+% Tex Packages
+%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[polutonikogreek,english]{babel}
+\usepackage[garamond]{psgreek}
+\usepackage{charter}
+\usepackage{parallel}
+\usepackage{fancyhdr}
+\usepackage{amssymb,amsmath}
+\usepackage{epsf}
+\usepackage[ps2pdf,bookmarks=true]{hyperref}
+
+%%%%%%
+% PDF info
+%%%%%%
+\hypersetup{
+pdfauthor      = {Richard Fitzpatrick, University of Texas at Austin},
+pdftitle          = {Euclid's Elements of Geometry},
+pdfsubject     = {Greek text of Euclid's Elements plus English translation},
+pdfkeywords = {Ancient Greek, Geometry},
+pdfcreator     = {LaTeX with hyperref package},
+pdfproducer  = {dvips + ps2pdf}}
+
+%%%%%%%%%%
+% New Commands
+%%%%%%%%%%
+\newcommand\gr[1]{\foreignlanguage{polutonikogreek}{#1}}
+\newcommand\gn[1]{\greeknumeral{#1}}
+\newcommand\ggn[1]{\gr{\gn{#1}}}
+\newcommand\ov[1]{$\overline{\mbox{\gr #1}}$}
+\newcommand\nline{\\\mbox{}\\ }
+\newcommand\spa{\mbox{}\\ }
+\long\def\symbolfootnote[#1]#2{\begingroup
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+%%%%%
+% Spacing
+%%%%%
+\parskip     		= 10pt plus 1pt minus 1pt
+\hfuzz        		= 5pt
+\textwidth  	= 7truein
+\topmargin 	= 0.0 in
+\headsep    		= 20pt
+\textheight 	= 8.5truein
+\oddsidemargin  -15pt
+\evensidemargin -10pt
+
+%%%%%
+%Content
+%%%%%
+\begin{document}
+
+\include{Book00/Introduction}
+\include{Book01/Book1}
+\include{Book02/Book2}
+\include{Book03/Book3}
+\include{Book04/Book4}
+\include{Book05/Book5}
+\include{Book06/Book6}
+\include{Book07/Book7}
+\include{Book08/Book8}
+\include{Book09/Book9}
+\include{Book10/Book10}
+\include{Book11/Book11}
+\include{Book12/Book12}
+\include{Book13/Book13}
+\include{Book99/Lexicon}
+
+\end{document}
