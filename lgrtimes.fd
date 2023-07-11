@@ -1,0 +1,16 @@
+\ProvidesFile{LGRtimes.fd}
+ [2013/01/30 generated font description file]
+ \DeclareFontFamily{LGR}{times}{}
+ \DeclareFontShape{LGR}{times}{m}{n}{<->ssub * cmr/m/n}{}
+ \DeclareFontShape{LGR}{times}{m}{it}{<->ssub * cmr/m/it}{}
+ \DeclareFontShape{LGR}{times}{m}{sl}{<->ssub * cmr/m/sl}{}
+ \DeclareFontShape{LGR}{times}{m}{sc}{<->ssub * cmr/m/sc}{}
+ \DeclareFontShape{LGR}{times}{b}{n}{<->ssub * cmr/bx/n}{}
+ \DeclareFontShape{LGR}{times}{b}{it}{<->ssub * cmr/bx/it}{}
+ \DeclareFontShape{LGR}{times}{b}{sl}{<->ssub * cmr/bx/sl}{}
+ \DeclareFontShape{LGR}{times}{b}{sc}{<->ssub * cmr/bx/sc}{}
+ \DeclareFontShape{LGR}{times}{bx}{n}{<->ssub * cmr/bx/n}{}
+ \DeclareFontShape{LGR}{times}{bx}{it}{<->ssub * cmr/bx/it}{}
+ \DeclareFontShape{LGR}{times}{bx}{sl}{<->ssub * cmr/bx/sl}{}
+ \DeclareFontShape{LGR}{times}{bx}{sc}{<->ssub * cmr/bx/sc}{}
+ 

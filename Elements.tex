@@ -3,7 +3,7 @@
 %
 % The Greek text of Heiberg plus a modern English translation by
 % Prof. Richard Fitzpatrick, The University of Texas at Austin.
-% E-mail: rfitzp@farside.ph.utexas.edu
+% E-mail: rfitzp@utexas.edu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
@@ -12,15 +12,15 @@
 %%%%%%%%
 % Tex Packages
 %%%%%%%%
-\usepackage[utf8]{inputenc}
-\usepackage[polutonikogreek,english]{babel}
-\usepackage[garamond]{psgreek}
-\usepackage{charter}
+\usepackage{amssymb,amsmath}
 \usepackage{parallel}
 \usepackage{fancyhdr}
-\usepackage{amssymb,amsmath}
 \usepackage{epsf}
 \usepackage[ps2pdf,bookmarks=true]{hyperref}
+\usepackage[greek,english]{babel}
+\languageattribute{greek}{polutoniko}
+\usepackage[boldLipsian]{teubner}
+\usepackage[varg]{txfonts}
 
 %%%%%%
 % PDF info
@@ -36,8 +36,8 @@ pdfproducer  = {dvips + ps2pdf}}
 %%%%%%%%%%
 % New Commands
 %%%%%%%%%%
-\newcommand\gr[1]{\foreignlanguage{polutonikogreek}{#1}}
-\newcommand\gn[1]{\greeknumeral{#1}}
+\newcommand\gr[1]{\begin{Lipsiakostext}#1\end{Lipsiakostext}}
+\newcommand\gn[1]{\greeknumeral*{#1}}
 \newcommand\ggn[1]{\gr{\gn{#1}}}
 \newcommand\ov[1]{$\overline{\mbox{\gr #1}}$}
 \newcommand\nline{\\\mbox{}\\ }
@@ -48,12 +48,12 @@ pdfproducer  = {dvips + ps2pdf}}
 %%%%%
 % Spacing
 %%%%%
-\parskip     		= 10pt plus 1pt minus 1pt
-\hfuzz        		= 5pt
-\textwidth  	= 7truein
-\topmargin 	= 0.0 in
-\headsep    		= 20pt
-\textheight 	= 8.5truein
+\parskip     		     = 10pt plus 1pt minus 1pt
+\hfuzz        		     = 5pt
+\textwidth  	     = 7truein
+\topmargin 	     = 0.0 in
+\headsep    		     = 20pt
+\textheight 	     = 8.5truein
 \oddsidemargin  -15pt
 \evensidemargin -10pt
 
